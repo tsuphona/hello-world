@@ -21,7 +21,7 @@ def main():
     elif args.number:
         n = int(args.number)
         for i in range(n):
-            print("thomas")
+            print(f"thomas nr: {i+1}")
 
 
 if __name__ == "__main__":
