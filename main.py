@@ -3,15 +3,14 @@ import argparse
 
 
 def main():
-    text = "This is a test program to \
+    description = "This is a test program to \
     use the command line arguments"
 
-    parser = argparse.ArgumentParser(description=text)
+    parser = argparse.ArgumentParser(description=description)
 
     parser.add_argument(
-        "-V", "--version", help="show program version", action="store_true"
+        "-v", "--version", help="show program version", action="store_true"
     )
-
     parser.add_argument("-n", "--number", help="print thomas n times")
 
     args = parser.parse_args()
